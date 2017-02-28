@@ -62,27 +62,18 @@
 			position: relative;
 		}
 		input[type='checkbox']:checked+label:before{
-			    content: '';
-			    width: 5px;
-			    height: 12px;
-			    display: inline-block;
-			    border-left: 2px solid red;
-			    transform: rotate(230deg);
-			    position: absolute;
-			    left: 4px;
-			    top: 0px;
-		}
-		input[type='checkbox']:checked+label:after{
 			content: '';
 		    width: 5px;
-		    height: 5px;
+		    height: 12px;
 		    display: inline-block;
 		    border-left: 2px solid red;
-		    transform: rotate(125deg);
+		    border-top: 2px solid red;
+		    transform: rotate(230deg);
 		    position: absolute;
-		    left: -2px;
-		    top: 8px;
+		    left: 4px;
+		    top: -1px;
 		}
+		
 	</style>
 </head>
 
@@ -90,16 +81,16 @@
 	<div class='content'>
 		<div>
 			<input name='hobby' type='checkbox' id='checkbox1'>
-			<label for='checkbox1' data-name='玩游戏'></label>
+			<label for='checkbox1'></label>
 
 			<input name='hobby' type='checkbox' id='checkbox2'>
-			<label for='checkbox2' data-name='看书'></label>
+			<label for='checkbox2'></label>
 		</div>
 		<div>
 			<input name='sex' type='radio' id='sex1'>
-			<label for='sex1' data-name='男'></label>
+			<label for='sex1'></label>
 			<input name='sex' type='radio' id='sex2'>
-			<label for='sex2' data-name='女'></label>
+			<label for='sex2'></label>
 		</div>
 	</div>
 </body>
